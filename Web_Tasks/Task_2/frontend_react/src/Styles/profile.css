@@ -1,0 +1,121 @@
+.main {
+  margin-bottom: 1000px;
+}
+
+.user,
+.created_polls,
+.other {
+  box-sizing: border-box;
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  background: #d5c9c023;
+}
+.user {
+  margin-top: 150px;
+  position: relative;
+}
+.user .photo {
+  position: absolute;
+  top: -150px;
+  border-radius: 50%;
+  margin-left: 30%;
+  height: 300px;
+  width: 300px;
+  border: solid rgb(255, 255, 255) 10px;
+  overflow: hidden;
+}
+
+.user .photo img {
+  width: 300px;
+}
+
+.user .photo:hover {
+  box-shadow: 0 0 10px rgb(0, 255, 255);
+}
+
+.user .details {
+  margin-top: 170px;
+}
+
+.user .details h1 {
+  text-align: center;
+  font-family: "Righteous", cursive;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.user .details h2,
+.user .details h3,
+.user .details p {
+  margin-left: 35%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.user .details h2 {
+  color: white;
+  margin-top: -8px;
+  margin-bottom: 10px;
+}
+
+.user .details h3 {
+  color: white;
+  margin-top: -8px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: -15px;
+}
+.other {
+  align-content: center;
+}
+
+.allPolls {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Set the width of each column */
+  column-gap: 20px;
+  align-items: center;
+}
+
+.allPolls .other {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media (max-width: 675px) {
+  .user {
+    margin-top: 100px;
+  }
+  .user .photo {
+    position: absolute;
+    top: -110px;
+    border-radius: 50%;
+    margin-left: 15%;
+    height: 200px;
+    width: 200px;
+    border: solid rgb(255, 255, 255) 5px;
+    overflow: hidden;
+  }
+  .user .photo img {
+    width: 200px;
+  }
+  .user .details {
+    margin-top: 100px;
+  }
+  .user .details h2,
+  .user .details h3,
+  .user .details p {
+    margin-left: 25%;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+}

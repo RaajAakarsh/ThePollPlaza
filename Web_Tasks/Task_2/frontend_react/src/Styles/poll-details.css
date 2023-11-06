@@ -1,0 +1,105 @@
+.poll_container {
+  box-sizing: border-box;
+  padding: 20px;
+  background: var(--bg-box2);
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  background: #d5c9c023;
+}
+.poll_container h3 {
+  font-family: "Righteous", cursive;
+  font-size: 25px;
+  color: white;
+}
+.poll_container p {
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: aliceblue;
+}
+.poll_container h2 {
+  font-size: 30px;
+  color: #00f7ff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.poll_container button {
+  border: none;
+  margin-top: 30px;
+  background-color: rgba(255, 216, 167, 0.283);
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #000;
+  backdrop-filter: blur(8px);
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.poll_container button:hover {
+  background-color: #00f7ff;
+  color: white;
+  box-shadow: 0 0 5px #00f7ff;
+}
+.total_votes{
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "JUST Sans ExBold", Arial, Helvetica, sans-serif;
+  color: black;
+}
+.poll_options {
+  display: flex;
+  justify-content: space-around;
+  column-gap: 20px;
+  color: #fff;
+  border-top: #fff solid 1px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.poll_outer{
+    display: block;
+}
+#option {
+  display: inline-block;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: justify;
+  width: 100px;
+}
+.poll_option {
+  border-top: #fff solid 1px;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+.poll_option input[type="checkbox"] {
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  cursor: pointer;
+  padding-right: 10px;
+  vertical-align: top;
+  margin-top: 5px;
+
+}
+.poll_option input[type="radio"] {
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  cursor: pointer;
+  margin-top: 5px;
+  vertical-align: top;
+}
+.poll_graph {
+  width: 100%;
+  background: #00f7ff;
+  text-align: center;
+  color: transparent;
+  font-size: 20px;
+  -webkit-text-stroke: 1px #000000;
+  font-family: "JUST Sans ExBold", Arial, Helvetica, sans-serif;
+} 

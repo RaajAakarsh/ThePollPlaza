@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+/* colors */
+:root {
+  --text-color: #15ff00; 
+  --text-color2: #d1ffcd;
+  --bg-color: #000;
+  --bg-box1: #006500;
+  --bg-box2: #032000;
+  --color-secondary: #ff4300;
+}
+
+/* base styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+}
+
+body {
+  color: #00f7ff;
+  background-image: url(/public/Images/wallpaper.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90px;
+  border-bottom: double 1px var(--text-color2);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  backdrop-filter: blur(80px);
+}
+
+.navbar h1 {
+  font-family: "Monoton";
+  font-size: 45px;
+  font-style: italic;
+  margin-left: 30px;
+  color: var(--color-secondary);
+  position: relative;
+  white-space: nowrap;
+}
+.navbar h1::after {
+  opacity: 1;
+  content: "THE POLL PLAZA";
+  font-family: "Righteous", cursive;
+  opacity: 1;
+  font-weight: 900;
+  color: white;
+  top: 12px;
+  left: 0px;
+  position: absolute;
+  font-size: 40px;
+  letter-spacing: 5px;
+  white-space: nowrap;
+}
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar a img {
+  width: 70px;
+  border-radius: 40px;
+  transition: 0.5s;
+  position: relative;
+}
+
+.navbar a img:hover {
+  box-shadow: 0 0 10px #00f7ff;
+}
+
+.links {
+  display: flex;
+  width: 350px;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 30px;
+}
+
+.links a {
+  position: relative;
+}
+.links a::after {
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: 30px;
+  padding: 5px;
+  transition: ease-out 0.5s;
+  font-weight: 800;
+  white-space: nowrap;
+  text-align: center;
+  background: white;
+  opacity: 0;
+}
+
+#home-icon:hover::after {
+  content: "Home";
+  left: 10px;
+  top: 80px;
+  background: #d5c9c040;
+  backdrop-filter: blur(2px);
+  color: #00f7ff;
+  opacity: 100%;
+  border-radius: 10px;
+}
+
+#create-poll:hover::after {
+  content: "Create Poll";
+  left: -12px;
+  top: 80px;
+  background: #d5c9c040;
+  backdrop-filter: blur(2px);
+  color: #00f7ff;
+  opacity: 100%;
+  border-radius: 10px;
+}
+#profile:hover::after {
+  content: "Profile";
+  left: 8px;
+  top: 80px;
+  background: #d5c9c040;
+  backdrop-filter: blur(2px);
+  color: #00f7ff;
+  opacity: 100%;
+  border-radius: 10px;
+}
+
+#login {
+  border-radius: 10px;
+  padding: 2px;
+  transition: 0.5s;
+  color: #fff;
+  width: 100px;
+  height: 35px;
+  font-weight: 500;
+  font-size: 25px;
+  text-align: center;
+  font-family: "Righteous", cursive;  
+}
+#login:hover {
+  box-shadow: 0 0 10px #00f7ff;
+}
+
+.component {
+  border: solid 1px var(--text-color2);
+  max-width: 900px;
+  width: auto;
+  margin: 150px auto 30px auto;
+  padding: 20px 30px;
+  border-radius: 20px;
+  position: relative;
+}
+
+/* Media Queries */
+/* 0 - 675 */
+@media (max-width: 675px) {
+  .navbar {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar h1 {
+    white-space: nowrap;
+    border-bottom: solid 1px white;
+    margin-bottom: 20px;
+  }
+  .component {
+    margin: auto 25px;
+    margin-top: 200px;
+    margin-bottom: 10px;
+  }
+}
+
+/* previewing the polls on the home page */
+.poll-preview {
+  box-sizing: border-box;
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  background: #d5c9c023;
+}
+.poll-preview a {
+  text-decoration: none;
+}
+
+.poll-preview:hover {
+  box-shadow: 0 0 4px 0 #0474fd, 0 0 8px 0 #f6ff00;
+}
+.poll-list {
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+
+.poll-list h1 {
+  font-family: "Righteous", cursive;
+  text-align: center;
+  color: white;
+  font-size: 45px;
+}
+
+.poll-preview span {
+  color: white;
+  font-size: 90px;
+  font-weight: 900;
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+  color: transparent;
+  -webkit-text-stroke: 2px #ffffff;
+  font-family: "JUST Sans ExBold", Arial, Helvetica, sans-serif;
+}
+
+.poll-preview-inner {
+  display: inline-block;
+}
+
+.poll-preview h2 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #00f7ff;
+}
+
+.poll-preview p {
+  color: var(--text-color2);
+}
