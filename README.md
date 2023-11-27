@@ -26,3 +26,8 @@ This will run the backend on `http://localhost:8000/`.
 ### Accessing the Website
 Once both the frontend and backend servers are running, you can access the polling website by visiting `http://localhost:3000/` in your web browser.
 
+![Landing Page Screenshot](./LandingPage.png)
+![Poll Screenshot](./Poll.png)
+![User Profile Screenshot](./UserProfile.png)
+![Registration Page Screenshot](./NewUser.png)
+![Create New Poll Screenshot](./CreateNewPoll.png)
