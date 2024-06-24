@@ -6,6 +6,7 @@ import PollDetails from "./PollDetails";
 import Login from "./Login";
 import Register from "./Register";
 import Profile from "./Profile";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
             </Route>
           </Switch>
         </div>
+        <Footer></Footer>
       </div>
     </Router>
   );
